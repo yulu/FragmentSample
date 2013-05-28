@@ -1,6 +1,7 @@
 package com.example.fragmentsample;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 public class MainActivity extends Activity implements MyListFragment.OnItemSelectedListener{
@@ -16,6 +17,11 @@ public class MainActivity extends Activity implements MyListFragment.OnItemSelec
     	DetailFragment fragment = (DetailFragment)getFragmentManager().findFragmentById(R.id.detailFragment);
     	if(fragment != null && fragment.isInLayout()){
     		fragment.setText(link);
+    	}else{
+    		Intent intent = new Intent(getApplicationContext(), 
+    				DetailActivity.class);
+    		intent.putExtra(DetailActivity.EXTRA_URL, link);
+    		startActivity(intent);
     	}
     }
     
