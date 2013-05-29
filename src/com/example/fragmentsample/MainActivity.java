@@ -1,17 +1,30 @@
 package com.example.fragmentsample;
 
+<<<<<<< HEAD
 import android.app.Activity;
 import android.content.Intent;
+=======
+>>>>>>> 98061eea3fb4ee3e97be73aca98a7c0e5fab7522
 import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
 
-public class MainActivity extends Activity implements MyListFragment.OnItemSelectedListener{
+public class MainActivity extends Activity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-    }
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+	}
 
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+<<<<<<< HEAD
     @Override
     public void onMyItemSelected(String link){
     	DetailFragment fragment = (DetailFragment)getFragmentManager().findFragmentById(R.id.detailFragment);
@@ -25,4 +38,6 @@ public class MainActivity extends Activity implements MyListFragment.OnItemSelec
     	}
     }
     
+=======
+>>>>>>> 98061eea3fb4ee3e97be73aca98a7c0e5fab7522
 }
