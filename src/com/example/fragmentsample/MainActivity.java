@@ -1,15 +1,12 @@
 package com.example.fragmentsample;
 
-<<<<<<< HEAD
+
 import android.app.Activity;
 import android.content.Intent;
-=======
->>>>>>> 98061eea3fb4ee3e97be73aca98a7c0e5fab7522
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.Menu;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements MyListFragment.OnItemSelectedListener{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +21,9 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-<<<<<<< HEAD
+
     @Override
-    public void onMyItemSelected(String link){
+    public void onRssItemSelected(String link){
     	DetailFragment fragment = (DetailFragment)getFragmentManager().findFragmentById(R.id.detailFragment);
     	if(fragment != null && fragment.isInLayout()){
     		fragment.setText(link);
@@ -37,7 +34,5 @@ public class MainActivity extends Activity {
     		startActivity(intent);
     	}
     }
-    
-=======
->>>>>>> 98061eea3fb4ee3e97be73aca98a7c0e5fab7522
+
 }

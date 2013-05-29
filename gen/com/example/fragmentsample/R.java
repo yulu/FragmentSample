@@ -14,7 +14,6 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-<<<<<<< HEAD
         public static final int button1=0x7f070002;
         public static final int detailFragment=0x7f070000;
         public static final int detail_text=0x7f070001;
@@ -26,12 +25,6 @@ public final class R {
         public static final int fragment_detail=0x7f030001;
         public static final int fragment_list=0x7f030002;
         public static final int main=0x7f030003;
-=======
-        public static final int menu_settings=0x7f070000;
-    }
-    public static final class layout {
-        public static final int main=0x7f030000;
->>>>>>> 98061eea3fb4ee3e97be73aca98a7c0e5fab7522
     }
     public static final class menu {
         public static final int main=0x7f060000;
